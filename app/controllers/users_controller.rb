@@ -2,5 +2,9 @@ class UsersController < ApplicationController #dziedziczenie po klasie Applicati
     # bedzie szukal w views/users/index.erb bo
     # bierze sobie domyslnie nazwe pliku
     # taka jak zdefinowana w metodzie
-    def index ;end
+    def index
+    #zmienna ktora bedzie zyla przez caly czas zycia requesta 
+    #podstawiamy wszytskich userow
+        @users = User.all   
+    end
 end
