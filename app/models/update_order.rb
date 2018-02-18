@@ -1,0 +1,2 @@
+class UpdateOrder < ApplicationRecord
+end

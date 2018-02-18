@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
- 
+  devise_for :users
+  root to: "users#index"
   get "/test", to: proc { |el| [200, {}, ["ok"]]}
 
   #po podaniu sciezki users odwola sie kontrolera wiec bedzie
   # szukal nazwy users_controller w folderze app/controllers
   # oraz 
-  get "/users", to: "users#index"
+  #get "/users", to: "users#index"
 
   get "/contacts", to: "static_pages#contacts"
 
@@ -17,4 +18,5 @@ Rails.application.routes.draw do
   # wszystkie endpointy mozna organiczyc zeby nie 
   # generowal wszystkch dodajac only w skladni na koncu 
   resources :orders
+  resources :users
 end
