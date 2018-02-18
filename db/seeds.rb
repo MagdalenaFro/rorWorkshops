@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
  #linjka ponizej pozwala na wpisanie wszystkiego jak string w quotach
 users = %w(Kasia Magda Maciek Domnik Lukasz)
 users.each {|name| User.create(name: name)}
