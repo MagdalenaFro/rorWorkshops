@@ -12,3 +12,6 @@ users.each {|name| User.create(name: name)}
 
 #pozniej rails db:reset - wyrzuca stara db, laduje seedy 
 
+User.all.each do |user|
+    user.ordes.create(name: "User #{user.name}")
+end
