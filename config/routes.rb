@@ -13,4 +13,8 @@ Rails.application.routes.draw do
 
   get "/kariera", to: "kariera#index"
 
+  # potem w terminalu rails routes i zobacz, ze wygenerowal
+  # wszystkie endpointy mozna organiczyc zeby nie 
+  # generowal wszystkch dodajac only w skladni na koncu 
+  resources :orders
 end

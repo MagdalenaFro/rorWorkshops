@@ -11,3 +11,4 @@ users = %w(Kasia Magda Maciek Domnik Lukasz)
 users.each {|name| User.create(name: name)}
 
 #pozniej rails db:reset - wyrzuca stara db, laduje seedy 
+
